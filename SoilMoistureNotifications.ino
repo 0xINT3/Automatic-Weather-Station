@@ -1,12 +1,9 @@
-//Mrhobbyelectronics
-//Website: http://www.mrhobbytronics.com
-//YouTube: https://www.youtube.com/MrHobbytronics
 
 #define BLYNK_PRINT Serial
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
-char auth[] = "2f1d0377b78b4d2ab4e3723e07347ede";
+char auth[] = "*******";   //enter your api token
 const int sensorPin = 4; 
 int sensorState = 0;
 int lastState = 0;
@@ -15,7 +12,7 @@ int lastState = 0;
 void setup()
 {
   Serial.begin(9600);
-  Blynk.begin(auth, "gaurav", "12345678");
+  Blynk.begin(auth, "SSID", "password");
   pinMode(sensorPin, INPUT);
 }
 
