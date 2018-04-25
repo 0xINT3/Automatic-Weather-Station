@@ -23,9 +23,9 @@ int sense_Pin = D0; // Soil Sensor input at Analog PIN A0
 int value = 0;
 
 
-String apiKey = "TY0X0LC1OHVKYR93";
-const char* ssid = "Akashdeep's iPhone";
-const char* password = "12345678";
+String apiKey = "******";
+const char* ssid = "******";
+const char* password = "********";
 
 const char* server = "api.thingspeak.com";
 
